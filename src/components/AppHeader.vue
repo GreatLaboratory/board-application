@@ -1,6 +1,6 @@
 <template>
   <div class="app-header">
-    <h1>Community</h1>
+    <router-link :to="{name: 'PostListPage'}"><h1>Community</h1></router-link>
     <div v-if="isAuthorized">
       <strong>
         <button @click="toggle">{{ me.name }}님 환영합니다.</button>
